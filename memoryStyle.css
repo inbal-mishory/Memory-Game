@@ -105,8 +105,9 @@ body {
 }
 
 #gameHeader h1 {
+	font-family: 'Alfa Slab One', Tahoma;
 	margin-top: 10px;
-    margin-bottom: 0px;
+    	margin-bottom: 0px;
 	color:#f2f2f2;
 	font-weight: bold;
 	text-align: center;
