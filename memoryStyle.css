@@ -298,6 +298,10 @@ button {
     animation-iteration-count: infinite;
 }
 
+#animateFireworksRotate img {
+	width: 100px;
+}
+
 #animateTest p {
 	font-size: 35px;
 	font-weight:bold;
