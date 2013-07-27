@@ -103,7 +103,6 @@
 			var cradsContainer;
 			var chooseLevelScreen;
 			var chosenLevel;
-			//var nCardsClicked = 0;
 			var cardFlag;
 			var pairsRemoved = [];
 			var gameScreen;
@@ -115,9 +114,8 @@
 			var bubbleUrl = "bubble.wav", bubbleBuffer;
 			var applauseUrl = "applause.wav", applauseBuffer;
 
-			try {var context = new webkitAudioContext(),
-			buffer;}
-			catch(e){};
+			window.AudioContext = window.AudioContext||window.webkitAudioContext;
+			var context = new AudioContext();
 
 			loadSound(flipeUrl, function(buffer) {
 				flipBuffer = buffer;
@@ -266,6 +264,7 @@ function gestureHandler(event){
 //~~~~~~~~~ Play sounds                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 		function playSounds(sound) {
+			if( ! context){return;console.log("mmm?")}
 			var source = context.createBufferSource();
 			switch(sound) {
 				case "bubble": source.buffer = bubbleBuffer;

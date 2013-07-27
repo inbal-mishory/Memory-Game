@@ -1,0 +1,10 @@
+if (window['google'] != undefined && window['google']['loader'] != undefined) {
+if (!window['google']['picker']) {
+window['google']['picker'] = {};
+google.picker.Version = '1.0';
+google.picker.JSHash = '27b625d21ca34b09c89dcd3d22f65143';
+google.picker.LoadArgs = 'file\75picker\46v\0751\46async\0752\46sensor\75false';
+}
+google.loader.writeLoadTag("css", google.loader.ServiceBase + "/api/picker/1.0/27b625d21ca34b09c89dcd3d22f65143/default.css", true);
+google.loader.writeLoadTag("script", google.loader.ServiceBase + "/api/picker/1.0/27b625d21ca34b09c89dcd3d22f65143/default.I.js", true);
+}

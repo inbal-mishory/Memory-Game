@@ -1,0 +1,816 @@
+body, table td {
+	font-family: Arial, sans-serif;
+	font-size: 12px; /* font size for the global site */
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+::-webkit-scrollbar {
+	width: 14px;
+	height: 14px;
+	overflow: visible
+}
+
+::-webkit-scrollbar-button {
+	height: 0;
+	width: 0
+}
+
+::-webkit-scrollbar-track {
+	background-clip: padding-box;
+	border: solid transparent;
+	width: 16px;
+	border-width: 0 0 0 4px
+}
+
+::-webkit-scrollbar-track:horizontal {
+	border-width: 4px 0 0
+}
+
+::-webkit-scrollbar-track:hover {
+	background-color: rgba(0, 0, 0, 0.035);
+	box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1)
+}
+
+::-webkit-scrollbar-track:horizontal:hover {
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1)
+}
+
+::-webkit-scrollbar-track:active {
+	background-color: rgba(0, 0, 0, 0.05);
+	box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.14), inset -1px 0 0
+		rgba(0, 0, 0, 0.07)
+}
+
+::-webkit-scrollbar-track:horizontal:active {
+	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.14), inset 0 -1px 0
+		rgba(0, 0, 0, 0.07)
+}
+
+::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment
+	{
+	display: block
+}
+
+::-webkit-scrollbar-button:vertical:start:increment,::-webkit-scrollbar-button:vertical:end:decrement
+	{
+	display: none
+}
+
+::-webkit-scrollbar-thumb {
+	min-height: 28px;
+	padding-top: 100px;
+	background-clip: padding-box;
+	background-color: rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0
+		rgba(0, 0, 0, 0.07)
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25)
+}
+
+::-webkit-scrollbar-thumb:active {
+	-webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35);
+	background-color: rgba(0, 0, 0, .5)
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	border: 0 solid transparent;
+	border-left: 5px solid transparent
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	border: 0 solid transparent;
+	border-top: 5px solid transparent
+}
+
+.gwt-SuggestBox {
+	padding: 2px;
+}
+
+.gwt-SuggestBoxPopup {
+	border: 1px solid #d5d5d5;
+}
+
+.gwt-SuggestBoxPopup .item {
+	padding: 2px 6px;
+	color: #666;
+	cursor: default;
+	font-size: 12px;
+	font-family: arial, sans-serif;
+}
+
+.gwt-SuggestBoxPopup .item-selected {
+	background: #d5d5d5;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupContent {
+	background-color: #fdfdfd;
+}
+
+.fs-Welcome, .fs-TermsOfService {
+	padding: 20px;
+	padding: 20px;
+}
+
+.fs-Welcome h1 {
+	margin-top: 0px;
+	font-size: 18px;
+}
+
+.fs-WizardStepIndicator {
+	margin-left: 150px;
+}
+
+.fs-SlideShow {
+	border: 1px solid #999;
+	border-radius: 12px;
+}
+
+.fs-SlideShow .content {
+	
+}
+
+.fs-SlideShow .thumbs {
+	
+}
+
+.fs-FlipPanel-wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.fs-FlipPanel {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+}
+
+.fs-FlipPanel-flipped {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-webkit-transform: rotateY(180deg);
+}
+
+.fs-FlipPanel-front {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+}
+
+.fs-FlipPanel-back {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotateY(180deg);
+	-webkit-backface-visibility: hidden;
+}
+
+.reflect {
+	-webkit-box-reflect: below 10px
+		-webkit-gradient(linear, left top, left bottom, from(transparent),
+		to(rgba(255, 255, 255, 0.3) ) );
+}
+
+.fs-CubePanel-wrapper {
+	width: 100%;
+	height: 100%;
+	-webkit-perspective: 800px;
+	-webkit-perspective-origin: 50% 50%;
+}
+
+.fs-CubePanel {
+	width: 585px;
+	height: 220px;	
+	position: relative;
+	margin: 0 auto;
+	-webkit-transition: -webkit-transform 1s linear;
+	-webkit-transform-style: preserve-3d;
+}
+
+.fs-CubePanel-face {
+	position: absolute;
+	width: 585px;
+	height: 220px;
+	position: absolute;
+}
+
+.fs-CubePanel-side0 {
+	-webkit-transform: translateZ(293px);
+}
+
+.fs-CubePanel-side1 {
+	-webkit-transform: rotateY(90deg) translateZ(293px);
+}
+
+.fs-CubePanel-side2 {
+	-webkit-transform: rotateY(180deg) translateZ(293px);
+}
+
+.fs-CubePanel-side3 {
+	-webkit-transform: rotateY(-90deg) translateZ(293px);
+}
+
+.fs-CubePanel-side4 {
+	-webkit-transform: rotateX(90deg) translateZ(110px);
+	width: 585px;	
+	height: 585px;	
+}
+
+.fs-CubePanel-side5 {
+	-webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(110px);
+	width: 585px;	
+	height: 585px;	
+}
+
+.fs-hint {
+	padding-left: 3px;
+	color: #AAAAAA;
+}
+
+.fs-TooltipTrigger:hover.fs-Tooltip,.fs-TooltipTrigger:hover .fs-Tooltip
+	{
+	opacity: 0.92;
+	visibility: visible;
+}
+
+.fs-Tooltip {
+	z-index: 2;
+	visibility: hidden;
+	color: #000;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+	text-align: left;
+	opacity: 0;
+	background-color: #fafafa;
+	position: absolute;
+	right: 8px;
+	border: 2px solid #000;
+	border-radius: 3px;
+	padding: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+	-moz-box-shadow: 0 0 3px #999;
+	-webkit-box-shadow: 0 0 3px #999;
+	box-shadow: 0 0 3px #999;
+	line-height: 22px;
+}
+
+.fs-Tooltip:after,.fs-Tooltip:before {
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	right: 35px;
+	width: 0;
+	position: absolute;
+}
+
+.fs-Tooltip:after {
+	border-width: 9px;
+	border-bottom-color: #fafafa;
+}
+
+.fs-Tooltip:before {
+	border-width: 11px;
+	border-bottom-color: #000;
+}
+
+.fs-TooltipBottom {
+	top: 44px;
+}
+
+.fs-TooltipBottom:after {
+	border-bottom-color: #fafafa;
+	top: -18px;
+}
+
+.fs-TooltipBottom:before {
+	top: -22px;
+	right: 33px;
+}
+
+.fs-TooltipBottomLeft {
+	left: 0px;
+}
+
+.fs-TooltipBottomLeft:before {
+	left: 32px;
+}
+
+.fs-TooltipBottomLeft:after {
+	left: 34px;
+}
+
+.fs-TooltipBottomRight {
+}
+
+.fs-TooltipBottomRight:after {
+	right: 8px;
+}
+
+.fs-TooltipBottomRight:before {
+	right: 6px;
+}
+
+.fs-GlassPanel {
+	background: #fff;
+	filter: alpha(opacity =   50);
+	opacity: .5
+}
+
+.fs-ButtonDefault .gwt-Anchor,.fs-ButtonPrimary .gwt-Anchor,.fs-ButtonSecondary .gwt-Anchor
+	{
+	color: white;
+	text-decoration: none;
+	padding: 0px;
+	display: block;
+	line-height: 27px;
+	height: 27px;
+}
+
+.fs-ButtonDefault .gwt-Anchor img,.fs-ButtonPrimary .gwt-Anchor img,.fs-ButtonSecondary .gwt-Anchor img
+	{
+	margin-top: 3px;
+	padding-left: 14px;
+	padding-right: 14px;
+	outline: none;
+	line-height: 0px;
+}
+
+.fs-PushButton .gwt-Anchor img:active, .fs-ButtonDefault .gwt-Anchor img:active,.fs-ButtonPrimary .gwt-Anchor img:active,.fs-ButtonSecondary .gwt-Anchor img:active
+	{
+	outline: none;
+}
+
+.fs-ButtonDefault .gwt-Anchor {
+	color: black;
+}
+
+.fs-ButtonDefault .gwt-Image,.fs-ButtonPrimary .gwt-Image,.fs-ButtonSecondary .gwt-Image,.fs-ButtonSpecial .gwt-Image
+	{
+	margin-top: 3px;
+}
+
+.fs-ButtonDefault,.fs-ButtonPrimary,.fs-ButtonSecondary,.fs-ButtonSpecial
+	{
+	border-radius: 2px;
+	cursor: default;
+	font-family: Arial, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 16px;
+	height: 27px;
+	line-height: 27px;
+	min-width: 54px;
+	outline: 0;
+	padding: 0 8px;
+}
+
+.fs-ButtonDefault:hover,.fs-ButtonPrimary:hover,.fs-ButtonSecondary:hover,.fs-ButtonSpecial:hover
+	{
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .1)
+}
+
+.fs-ButtonDefault {
+	background-color: #f5f5f5;
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+	background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
+	background-image: -ms-linear-gradient(top, #f5f5f5, #f1f1f1);
+	background-image: -o-linear-gradient(top, #f5f5f5, #f1f1f1);
+	background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+	color: #000;
+	border: 1px solid #dcdcdc;
+	border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.fs-ButtonDefault:hover {
+	background-color: #f8f8f8;
+	background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -ms-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -o-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+	border: 1px solid #c6c6c6;
+	color: #333
+}
+
+.fs-ButtonDefault:focus {
+	background-color: #eee;
+	background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -ms-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -o-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+	border: 1px solid #ccc;
+	color: #333
+}
+
+.fs-ButtonDefault:active {
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1)
+}
+
+.fs-ButtonDefault:focus {
+	background-color: #eee;
+	background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -ms-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -o-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+	border: 1px solid #ccc;
+	color: #333
+}
+
+.fs-ButtonDefault:active {
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1)
+}
+
+.fs-ButtonPrimary {
+	background-color: #d81f26;
+	background-image: -webkit-linear-gradient(top, #fb4e40, #d81f26);
+	background-image: -moz-linear-gradient(top, #fb4e40, #d81f26);
+	background-image: -ms-linear-gradient(top, #fb4e40, #d81f26);
+	background-image: -o-linear-gradient(top, #fb4e40, #d81f26);
+	background-image: linear-gradient(top, #fb4e40, #d81f26);
+	border: 1px solid transparent;
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	text-transform: uppercase;
+}
+
+.fs-ButtonPrimary:hover {
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background-color: #c53727;
+	background-image: -webkit-linear-gradient(top, #dd4b39, #c53727);
+	background-image: -moz-linear-gradient(top, #dd4b39, #c53727);
+	background-image: -ms-linear-gradient(top, #dd4b39, #c53727);
+	background-image: -o-linear-gradient(top, #dd4b39, #c53727);
+	background-image: linear-gradient(top, #dd4b39, #c53727);
+	border: 1px solid #b0281a;
+	border-bottom-color: #af301f
+}
+
+.fs-ButtonPrimary:focus {
+	-webkit-box-shadow: inset 0 0 0 1px #fff;
+	-moz-box-shadow: inset 0 0 0 1px #fff;
+	box-shadow: inset 0 0 0 1px #fff;
+	border: 1px solid #fff;
+	border: 1px solid rgba(0, 0, 0, 0);
+	outline: 1px solid #d14836;
+	outline: 0 rgba(0, 0, 0, 0)
+}
+
+.fs-ButtonPrimary:active {
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	background-color: #b0281a;
+	background-image: -webkit-linear-gradient(top, #dd4b39, #b0281a);
+	background-image: -moz-linear-gradient(top, #dd4b39, #b0281a);
+	background-image: -ms-linear-gradient(top, #dd4b39, #b0281a);
+	background-image: -o-linear-gradient(top, #dd4b39, #b0281a);
+	background-image: linear-gradient(top, #dd4b39, #b0281a);
+	border: 1px solid #f14b3c
+}
+
+.fs-ButtonSecondary {
+	background-color: #4D90FE;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#4d90fe),
+		to(#4787ed) );
+	background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+	background-image: -moz-linear-gradient(top, #4d90fe, #4787ed);
+	background-image: -ms-linear-gradient(top, #4d90fe, #4787ed);
+	background-image: -o-linear-gradient(top, #4d90fe, #4787ed);
+	background-image: linear-gradient(top, #4d90fe, #4787ed);
+	border: 1px solid transparent;
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.fs-ButtonSecondary:hover {
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background-color: #357AE8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#4d90fe),
+		to(#357ae8) );
+	background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
+	background-image: -moz-linear-gradient(top, #4d90fe, #357ae8);
+	background-image: -ms-linear-gradient(top, #4d90fe, #357ae8);
+	background-image: -o-linear-gradient(top, #4d90fe, #357ae8);
+	background-image: linear-gradient(top, #4d90fe, #357ae8);
+	border: 1px solid #2F5BB7;
+	border-bottom-color: #2956B0
+}
+
+.fs-ButtonSecondary:focus {
+	-webkit-box-shadow: inset 0 0 0 1px #fff;
+	-moz-box-shadow: inset 0 0 0 1px #fff;
+	box-shadow: inset 0 0 0 1px #fff;
+	border: 1px solid #fff;
+	border: 1px solid rgba(0, 0, 0, 0);
+	outline: 1px solid #d14836;
+	outline: 0 rgba(0, 0, 0, 0)
+}
+
+.fs-ButtonSecondary:active {
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	background-color: #357AE8;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#4d90fe),
+		to(#357ae8) );
+	background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
+	background-image: -moz-linear-gradient(top, #4d90fe, #357ae8);
+	background-image: -ms-linear-gradient(top, #4d90fe, #357ae8);
+	background-image: -o-linear-gradient(top, #4d90fe, #357ae8);
+	background-image: linear-gradient(top, #4d90fe, #357ae8);
+	border: 1px solid #2F5BB7;
+}
+
+.fs-ButtonDefault-up-disabled,.fs-ButtonDefault-up-disabled:hover,.fs-ButtonDefault-up-disabled:focus,.fs-ButtonDefault-up-disabled:active
+	{
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background-image: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #b8b8b8
+}
+
+.fs-ButtonPrimary-up-disabled,.fs-ButtonPrimary-up-disabled:hover,.fs-ButtonPrimary-up-disabled:focus,.fs-ButtonPrimary-up-disabled:active
+	{
+	background: #d14836;
+	filter: alpha(opacity =   50);
+	opacity: .5;
+	background-image: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid transparent;
+}
+
+.fs-ButtonSecondary-up-disabled,.fs-ButtonSecondary-up-disabled:hover,.fs-ButtonSecondary-up-disabled:focus,.fs-ButtonSecondary-up-disabled:active
+	{
+	background: #4d90fe;
+	filter: alpha(opacity =   50);
+	opacity: .5;
+	background-image: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid transparent;
+}
+
+.fs-ButtonSpecial {
+	background-color: #3D9400;
+	background-image: -webkit-linear-gradient(top, #3D9400, #398A00);
+	background-image: -moz-linear-gradient(top, #3D9400, #398A00);
+	background-image: -ms-linear-gradient(top, #3D9400, #398A00);
+	background-image: -o-linear-gradient(top, #3D9400, #398A00);
+	background-image: linear-gradient(top, #3D9400, #398A00);
+	border: 1px solid transparent;
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.fs-ButtonSpecial:hover {
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background-color: #368200;
+	background-image: -webkit-linear-gradient(top, #3D9400, #368200);
+	background-image: -moz-linear-gradient(top, #3D9400, #368200);
+	background-image: -ms-linear-gradient(top, #3D9400, #368200);
+	background-image: -o-linear-gradient(top, #3D9400, #368200);
+	background-image: linear-gradient(top, #3D9400, #368200);
+	border: 1px solid #29691d;
+	border-bottom-color: #26661b
+}
+
+.fs-ButtonSpecial:focus {
+	-webkit-box-shadow: inset 0 0 0 1px #fff;
+	-moz-box-shadow: inset 0 0 0 1px #fff;
+	box-shadow: inset 0 0 0 1px #fff;
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	border: 1px solid #29691d;
+	outline: 1px solid #d14836;
+	outline: 0 rgba(0, 0, 0, 0)
+}
+
+.fs-ButtonSpecial:active {
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+	background-color: #368200;
+	background-image: -webkit-linear-gradient(top, #3D9400, #368200);
+	background-image: -moz-linear-gradient(top, #3D9400, #368200);
+	background-image: -ms-linear-gradient(top, #3D9400, #368200);
+	background-image: -o-linear-gradient(top, #3D9400, #368200);
+	background-image: linear-gradient(top, #3D9400, #368200);
+	border: 1px solid #29691d;
+}
+
+.fs-ButtonSpecial-up-disabled,.fs-ButtonSpecial-up-disabled:hover,.fs-ButtonSpecial-up-disabled:focus,.fs-ButtonSpecial-up-disabled:active
+	{
+	background: #368200;
+	filter: alpha(opacity =   50);
+	opacity: .5;
+	background-image: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid transparent;
+}
+
+.fs-ButtonLeft {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin-right: 0px;
+	min-width: 32px;
+}
+
+.fs-ButtonMiddle {
+	border-radius: 0px;
+	margin-right: 0px;
+	min-width: 32px;
+	padding-left: 12px;
+}
+
+.fs-ButtonRight {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	min-width: 32px;
+}
+
+.fs-ButtonSingle {
+	margin-left: 12px;
+}
+
+.fs-ButtonSmall {
+	width: 24px;
+	min-width: 24px;
+}
+
+.fs-ButtonShort {
+	height: 20px;
+	line-height: 20px;
+	min-width: 0px;
+}
+
+.fs-DialogBox {
+	-webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, .2);
+	background: #fff;
+	background-clip: padding-box;
+	border: 1px solid #acacac;
+	border: 1px solid rgba(0, 0, 0, .333);
+	outline: 0;
+}
+
+.fs-DialogBox .dialogTopCenterInner {
+	padding: 17px 24px;
+}
+
+.fs-DialogBox .Caption {
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.fs-DialogContent {
+	border-top: 1px solid #E5E5E5;
+	color: #000;
+}
+
+.fs-DialogDefaultContent {
+	padding: 20px;
+}
+
+.fs-DialogContent .gwt-HTML {
+	line-height: 26px;
+}
+
+.fs-DialogContent h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #000;
+}
+
+.fs-DialogContent h2 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #999;
+}
+
+.fs-DialogButtons {
+	height: 50px;
+	padding-left: 24px;
+}
+
+.fs-DialogInput, .fs-DialogListBox {
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #C0C0C0 #D9D9D9 #D9D9D9;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	height: 29px;
+	padding: 5px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.fs-DialogListBox {
+	border-right: 1px solid #D9D9D9;
+	padding: 4px 4px 4px 5px;
+}
+
+.fs-DialogInput:focus, .fs-DialogListBox:focus {
+	border: 1px solid #C0C0C0;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+	outline: medium none;
+}
+
+.fs-WizardContent {
+	padding: 20px;
+	line-height: 18px;	
+}
+
+.fs-WizardContent h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #000;
+}
+
+.fs-WizardContent h2, .fs-PopupTitle {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #999;
+}
+
+.fs-PopupTitle {
+	padding: 6px;
+	padding-left: 20px;
+}
+
+.fs-WizardSection {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #000;
+}	
