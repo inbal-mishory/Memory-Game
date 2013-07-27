@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1366px){
     h1 {width:520px; font-size:35px;}
-    #levelText, #cradsContainer, #animationContainer {width: 530px; height: 560px;/*margin-top: 80px;*/}
+    #levelText, #cradsContainer, #animationContainer {width: 530px; height: 560px;}
     #levelText p {font-size: 35px;}
     .cardContainer {width: 120px; height:120px; margin-right: 4px; margin-top: 12px;}
     .front, .back {width: 120px; height: 120px; padding: 0px;}
@@ -10,7 +10,6 @@
 @media only screen and (max-width: 960px){
     h1 {width:520px; font-size:35px;}
     #levelText, #cradsContainer, #animationContainer {width: 542px; height: 530px;}
-    #levelText {/*margin-top: 84px;*/ height: 530px;}
     #levelText p {font-size: 35px;}
     .cardContainer {width: 120px; height:120px; margin: 3px; margin-top: 8px;}
     .front, .back {width: 120px; height: 120px; padding: 0px;}
