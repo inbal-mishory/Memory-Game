@@ -145,6 +145,7 @@ body {
 	background-color: #f2f2f2;
 	background-image: url("images/background.png");
 	background-position: center;
+	background-size:100%;
 	background-clip: none;
 	background-repeat: no-repeat;
 	/*border: outset 2px #bebebe;*/
@@ -332,6 +333,7 @@ button {
 	background-position: center;
 	background-clip: none;
 	background-repeat: no-repeat;
+	background-size:100%;
 	border-radius: 10px;
 	margin-left: auto;
 	margin-right: auto;
