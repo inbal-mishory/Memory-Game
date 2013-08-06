@@ -94,7 +94,7 @@ body {
 	width: 100%;
 	z-index: 10;
 	text-align: center;
-	border-radius: 10px 0px 0px 10px;
+	border-radius: 10px 10px 0px 0px;
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0.28) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.28)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.28) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
