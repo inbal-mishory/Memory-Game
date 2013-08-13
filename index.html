@@ -110,7 +110,7 @@
 			var gameScreen;
 			var animationScreen;
 
-			cradsContainer = document.getElementById("cradsContainer");
+			cradsContainer = $("#cradsContainer");
 
 			var flipeUrl = "flipcard.wav", flipBuffer;	
 			var bubbleUrl = "bubble.wav", bubbleBuffer;
@@ -160,12 +160,12 @@
 				}
 
 				
-				var oCradsContainer = document.getElementById("cradsContainer");
+				var oCradsContainer = $("#cradsContainer");
 
 				/*             ------ remove selection screen and add game screen ------ */
 
-				chooseLevelScreen = document.getElementById("chooseLevelScreen");
-				gameScreen = document.getElementById("gameScreen");
+				chooseLevelScreen = $("#chooseLevelScreen");
+				gameScreen = $("#gameScreen");
 				chooseLevelScreen.classList.add('visibilityH');
 				gameScreen.classList.add('visibilityV');
 
@@ -191,7 +191,7 @@
 				//~~~~~~~~~ Click event listener                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 				for (var i=1; i<nCards+1; i++) {
-					cardContainerObj = document.getElementById("cardContainer" + i);
+					cardContainerObj = $("#cardContainer" + i);
 					cardContainerObj.addEventListener("click", gestureHandler, false);
 					cardContainerObj.addEventListener("tap", gestureHandler, false);
 				}
@@ -285,19 +285,19 @@ function gestureHandler(event){
 //~~~~~~~~~ Return to choose level Screen                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 		function backToLevelChoice() {
-			var oCradsContainer = document.getElementById("cradsContainer");
-			var chooseLevelScreen = document.getElementById("chooseLevelScreen");
-			var gameScreen = document.getElementById("gameScreen");
-			var animationScreen = document.getElementById("animationScreen");
+			var oCradsContainer = $("#cradsContainer");
+			var chooseLevelScreen = $("#chooseLevelScreen");
+			var gameScreen = $("#gameScreen");
+			var animationScreen = $("#animationScreen");
 			oCradsContainer.innerHTML = "";
 			nLevel = 0;
-			if (animationScreen.style.display === "block") {
+			if (animationScreen.classList.contains("displayBlock")) {
 				pairsRemoved.length = 0;
-				animationScreen.style.display = "none";
+				animationScreen.classList.remove("displayBlock");
 			}
-			else if (gameScreen.style.display === "block") {
+			else if (gameScreen.classList.contains("displayBlock")) {
 				pairsRemoved.length = 0;
-				gameScreen.style.display = "none";
+				gameScreen.classList.remove("displayBlock");
 			}
 			chooseLevelScreen.classList.remove("visibilityH");
 		}
@@ -328,9 +328,9 @@ function shuffleArray(array) {
 			var card1Str = clickedCards[0].slice(0,nCard1Length-1);
 			var card2Str = clickedCards[1].slice(0,nCard1Length-1);
 			var flippedCards = document.querySelectorAll(".flipper.flip");
-			animationScreen = document.getElementById("animationScreen");
-			var animateTest = document.getElementById("animateTest");
-			var animateFireworks = document.getElementById("animateFireworks");
+			animationScreen = $("#animationScreen");
+			var animateTest = $("#animateTest");
+			var animateFireworks = $("#animateFireworks");
 
 			if(card1Str === card2Str) {
 				setTimeout(function(){
@@ -352,21 +352,21 @@ function shuffleArray(array) {
 			}
 			if (cardsBackArray.length === 8 && pairsRemoved.length > 3) {
 				setTimeout(function(){
-					animationScreen.style.display = "block";
+					animationScreen.classList.add("displayBlock";
 					animateTest.classList.add("bounceIn");
 					animateFireworks.classList.add("bounceInUp");
 				}, 800);
 			}
 			else if (cardsBackArray.length === 12 && pairsRemoved.length > 5) {
 				setTimeout(function(){
-					animationScreen.style.display = "block";
+					animationScreen.classList.add("displayBlock";
 					animateTest.classList.add("bounceIn");
 					animateFireworks.classList.add("bounceInUp");
 				}, 800);
 			}
 			else if (cardsBackArray.length === 16 && pairsRemoved.length > 7) {
 				setTimeout(function(){
-					animationScreen.style.display = "block";
+					animationScreen.classList.add("displayBlock";
 					animateTest.classList.add("bounceIn");
 					animateFireworks.classList.add("bounceInUp");
 				}, 800);
