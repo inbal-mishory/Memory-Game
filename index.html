@@ -34,7 +34,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <div id="gameHeader" class="animated"><h1>HTML5 Memory Game</h1><span class="visibilityH" id="instructionText">tap or click to flip card</span></div>
-        <div id="chooseLevelScreen">
+        <div id="chooseLevelScreen" class="displayBlock">
       		<div id="levelText">
       			<p><label for"Choose level:">Choose level:</label></p>
       			<p><button onclick="levelLayoutCreation(1)">1</button></p>
@@ -167,8 +167,8 @@
 				chooseLevelScreen = $("#chooseLevelScreen");
 				console.log(chooseLevelScreen);
 				gameScreen = $("#gameScreen");
-				chooseLevelScreen.classList.add('visibilityH');
-				gameScreen.classList.add('visibilityV');
+				chooseLevelScreen.classList.add("visibilityH");
+				gameScreen.classList.add("visibilityV");
 
 				/*             ------ create cards containers ------                    */
 
